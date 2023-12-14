@@ -3,11 +3,11 @@
 /* root styling */
 
 :root{
-    --light : #f8f9fa;
+    --light:#EAE8FF ;
     --secondary: #adb5bd;
-    --dark: #343a40;
-    --primary-color: #f15bb5;
-    --secondary-color: #2ec4b6;
+    --dark: #2D3142;
+    --primary-color: #ADACB5 ;
+    --secondary-color: #B0D7FF;
     --border : #e9ecef;
 }
 
@@ -15,6 +15,7 @@ body{
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    background-color: var(--primary-color);
 }
 
 a{
@@ -44,6 +45,10 @@ a{
 
 .bg-light{
     background-color: var(--light);
+}
+
+.bg-dark{
+    background-color: var(--dark);
 }
 
 .container{
@@ -202,12 +207,11 @@ a{
 .nav-link{
     font-size: 18px;
     margin: 12px;
-    color: var(--dark);
     font-family: 'Poppins', sans-serif;
 }
 
 .nav-link:hover{
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .search-box{
