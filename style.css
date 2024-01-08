@@ -25,7 +25,7 @@
     margin-bottom: 20px; /* Añade espacio entre los cards verticalmente */
     box-shadow: 0 4px 8px rgba(254, 254, 254, 0.1); /* Añade sombra al card */
     transition: box-shadow 0.9s ease; /* Agrega transición suave para la sombra */
-    border-radius: 3;
+    
 }
 
 .card:hover {
@@ -445,6 +445,8 @@ a{
     padding: 10px;
     border: 1px solid #bdc3c7; /* Cambia el color del borde de los campos de entrada */
     border-radius: 4px; /* Añade esquinas redondeadas a los campos de entrada */
+    box-shadow: 0 4px 8px rgba(254, 254, 254, 0.922); /* Añade sombra al card */
+    transition: box-shadow 0.9s ease;
 }
 
 .comment-form textarea {
