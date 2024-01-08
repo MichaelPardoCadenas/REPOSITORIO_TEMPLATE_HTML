@@ -13,6 +13,42 @@
     --blue : Blue;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+}
+
+.card {
+    flex-basis: calc(33.33% - 10px); /* Establece el ancho de cada card para tres en una fila */
+    margin-bottom: 20px; /* Añade espacio entre los cards verticalmente */
+    box-shadow: 0 4px 8px rgba(254, 254, 254, 0.1); /* Añade sombra al card */
+    transition: box-shadow 0.9s ease; /* Agrega transición suave para la sombra */
+    border-radius: 3;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(252, 251, 251, 0.2); /* Cambia la sombra al pasar el ratón sobre el card */
+}
+
+/* Ajuste de tamaño para imágenes dentro de los cards */
+.card img {
+    width: 100%; /* Las imágenes ocuparán el 100% del contenedor */
+    height: auto;
+}
+
+/* Estilo para los dos cards debajo de los tres primeros */
+.additional-image {
+    flex-basis: calc(50% - 10px); /* Establece el ancho de cada card para dos en una fila */
+    margin-bottom: 20px; /* Añade espacio entre los cards verticalmente */
+    box-shadow: 0 4px 8px rgba(252, 250, 250, 0.1); /* Añade sombra al card */
+    transition: box-shadow 0.9s ease; /* Agrega transición suave para la sombra */
+}
+
+.additional-image:hover {
+    box-shadow: 0 8px 16px rgba(252, 250, 250, 0.2); /* Cambia la sombra al pasar el ratón sobre el card */
+}
 body{
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -395,6 +431,38 @@ a{
 .col-4{
     flex: 0 0 30%;
     max-width: 30%;
+}
+.comment-form {
+    background-color: #ecf0f1; /* Cambia el color de fondo del formulario */
+    padding: 20px; /* Añade un relleno alrededor del formulario */
+    border-radius: 8px; /* Añade esquinas redondeadas al formulario */
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Cambia el color del borde de los campos de entrada */
+    border-radius: 4px; /* Añade esquinas redondeadas a los campos de entrada */
+}
+
+.comment-form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el área de texto */
+}
+
+.comment-form button {
+    background-color: #3498db; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px; /* Añade esquinas redondeadas al botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo del botón */
+}
+
+.comment-form button:hover {
+    background-color: #2980b9; /* Cambia el color de fondo del botón al pasar el ratón sobre él */
 }
 
 
