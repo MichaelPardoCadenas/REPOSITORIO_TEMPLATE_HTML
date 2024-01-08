@@ -5,10 +5,12 @@
 :root{
     --light:#EAE8FF ;
     --secondary: #adb5bd;
-    --dark: #2D3142;
-    --primary-color: #ADACB5 ;
+    --dark: #000000;
+    --primary-color: #000000 ;
     --secondary-color: #B0D7FF;
     --border : #e9ecef;
+    --white : white;
+    --blue : Blue;
 }
 
 body{
@@ -16,6 +18,13 @@ body{
     padding: 0;
     margin: 0;
     background-color: var(--primary-color);
+    
+}
+.image-caption {
+    text-align: center; /* Adjust the styling as needed */
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 a{
@@ -30,7 +39,12 @@ a{
 .text-light{
     color: var(--light);
 }
-
+.text-white{
+    color: var(--white);
+}
+.text-blue{
+    color: var(--blue)
+}
 .text-secondary{
     color: var(--secondary);
 }
@@ -382,5 +396,6 @@ a{
     flex: 0 0 30%;
     max-width: 30%;
 }
+
 
 
