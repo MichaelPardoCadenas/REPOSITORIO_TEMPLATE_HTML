@@ -18,6 +18,7 @@
 
     <!-- custom style.css file -->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
 
@@ -26,9 +27,8 @@
     <!-- Header -->
     <header id="header" class="shadow bg-dark">
         <nav class="container navbar">
-            <a href="#Definicion" class="nav-brand text-light">
-                Cyber Security
-            </a>
+            <img src="./assets/logo.jpg" class="logo">
+            
 
             <!-- toggle button -->
             <button class="toggle-button">
@@ -57,74 +57,87 @@
 
         <!-- Swiper slider -->
         <section class="slider">
+            <div class="bubbles">
+                <img src="./assets/slider/bubble.png" >
+                <img src="./assets/slider/bubble.png" >
+                <img src="./assets/slider/bubble.png" >
+                <img src="./assets/slider/bubble.png" >
+                <img src="./assets/slider/bubble.png" >
+                <img src="./assets/slider/bubble.png" >
+                <img src="./assets/slider/bubble.png" >
+            </div>
             <div class="container">
-
+                
                 <!-- Slider main container -->
                 <div class="swiper-container row">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
+                            <div id="changeTextContainer">
+                                <h1 id="changeText" class="nav-brand text-light text-center">  </h1>
+                            </div>
+                            <div id="foo" class="ball"></div>
                             <!-- Primera tarjeta -->
-<a href="#" class="card-link">
-    <div class="card">
-        <div class="card-body">
-            <section id="definicion" class="swiper-slide">
-                <div class="image-caption">
-                    <h1>¿QUÉ ES LA CIBERSEGURIDAD?</h1>
-                    <p>
-                        La ciberseguridad, también conocida como seguridad informática o seguridad de la información, se refiere a las prácticas y medidas diseñadas para proteger los sistemas informáticos, redes, programas y datos contra accesos no autorizados, ataques, daños o cualquier tipo de amenaza que pueda comprometer la confidencialidad, integridad y disponibilidad de la información.
+                                <a href="#Definicion" class="card-link">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <section id="definicion" class="swiper-slide">
+                                                <div class="image-caption">
+                                                    <h1>¿QUÉ ES LA CIBERSEGURIDAD?</h1>
+                                                    <p>
+                                                        La ciberseguridad, también conocida como seguridad informática o seguridad de la información, se refiere a las prácticas y medidas diseñadas para proteger los sistemas informáticos, redes, programas y datos contra accesos no autorizados, ataques, daños o cualquier tipo de amenaza que pueda comprometer la confidencialidad, integridad y disponibilidad de la información.
 
-                        En términos más simples, la ciberseguridad busca salvaguardar los activos digitales y garantizar que la información sensible esté protegida contra posibles riesgos y ataques cibernéticos. Esto implica la implementación de estrategias, políticas, herramientas y procedimientos para prevenir, detectar y responder a amenazas digitales, así como la gestión continua de los riesgos en el entorno digital.
-                    </p>
-                </div>
-            </section>
-        </div>
-        <img src="./assets/slider/Cybersecurity.jpg" class="card-img" alt="">
-    </div>
-</a>
+                                                        En términos más simples, la ciberseguridad busca salvaguardar los activos digitales y garantizar que la información sensible esté protegida contra posibles riesgos y ataques cibernéticos. Esto implica la implementación de estrategias, políticas, herramientas y procedimientos para prevenir, detectar y responder a amenazas digitales, así como la gestión continua de los riesgos en el entorno digital.
+                                                    </p>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <img src="./assets/slider/Cybersecurity.jpg" class="card-img" alt="">
+                                    </div>
+                                </a>
 
 <!-- Segunda tarjeta -->
-<a href="#" class="card-link">
-    <div class="card">
-        <div class="card-body">
-            <section id="importancia" class="swiper-slide"></section>
-            <div class="image-caption">
-                <h1>LA IMPORTANCIA DE CIBERSEGURIDAD</h1>
-                <p>
-                    La ciberseguridad desempeña un papel crucial en la protección de la privacidad, seguridad y reputación en el mundo digital. Ayuda a resguardar datos personales contra ciberdelincuentes que buscan cometer fraude o robo de identidad. Además, protege sistemas y redes contra diversos ataques, evitando daños significativos, pérdida de datos y costosas recuperaciones. Asimismo, contribuye a mantener la integridad de los datos, asegurando que la información sea precisa y no haya sido alterada sin autorización. En última instancia, la ciberseguridad se erige como un escudo defensivo esencial para preservar la confianza de clientes, empleados y socios comerciales, salvaguardando así la reputación de las organizaciones.
-                </p>
-            </div>
-        </div>
-        <img src="./assets/slider/Importancia .jpg" class="card-img" alt="">
-    </div>
-</a>
+                                <a href="#importancia" class="card-link">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <section id="importancia" class="swiper-slide"></section>
+                                            <div class="image-caption">
+                                                <h1>LA IMPORTANCIA DE CIBERSEGURIDAD</h1>
+                                                <p>
+                                                    La ciberseguridad desempeña un papel crucial en la protección de la privacidad, seguridad y reputación en el mundo digital. Ayuda a resguardar datos personales contra ciberdelincuentes que buscan cometer fraude o robo de identidad. Además, protege sistemas y redes contra diversos ataques, evitando daños significativos, pérdida de datos y costosas recuperaciones. Asimismo, contribuye a mantener la integridad de los datos, asegurando que la información sea precisa y no haya sido alterada sin autorización. En última instancia, la ciberseguridad se erige como un escudo defensivo esencial para preservar la confianza de clientes, empleados y socios comerciales, salvaguardando así la reputación de las organizaciones.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/slider/Importancia .jpg" class="card-img" alt="">
+                                    </div>
+                                </a>
 
 <!-- Tercera tarjeta -->
-<a href="#" class="card-link">
-    <div class="card">
-        <div class="card-body">
-            <section id="Medidades" class="swiper-slide"></section>
-            <div class="image-caption">
-                <h1>Medidas de CIBERSEGURIDAD:</h1>
-                <p>
-                    Existen diversas medidas de ciberseguridad que pueden ayudar a proteger los sistemas informáticos, las redes y los datos. Algunas de las medidas más importantes incluyen:
+                                <a href="#Medidas" class="card-link">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <section id="Medidades" class="swiper-slide"></section>
+                                            <div class="image-caption">
+                                                <h1>Medidas de CIBERSEGURIDAD:</h1>
+                                                <p>
+                                                    Existen diversas medidas de ciberseguridad que pueden ayudar a proteger los sistemas informáticos, las redes y los datos. Algunas de las medidas más importantes incluyen:
 
-                    - Usar contraseñas seguras: Las contraseñas deben ser largas, complejas y únicas para cada cuenta.
-                    - Actualizar el software con regularidad: Los parches de seguridad pueden ayudar a proteger contra vulnerabilidades conocidas.
-                    - Tener cuidado con los enlaces y los archivos adjuntos en los correos electrónicos: Los correos electrónicos fraudulentos pueden contener malware o enlaces que conducen a sitios web maliciosos.
-                    - Hacer copias de seguridad de los datos: Las copias de seguridad pueden ayudar a restaurar los datos en caso de un ataque cibernético.
-                    - Contar con un plan de respuesta a incidentes: Un plan de respuesta a incidentes puede ayudar a las organizaciones a recuperarse rápidamente de un ataque cibernético.
-                </p>
-            </div>
-        </div>
-        <img src="./assets/slider/Medidas de ciberseguridad.jpg" class="card-img" alt="">
-    </div>
-</a>
-<br>
+                                                    - Usar contraseñas seguras: Las contraseñas deben ser largas, complejas y únicas para cada cuenta.
+                                                    - Actualizar el software con regularidad: Los parches de seguridad pueden ayudar a proteger contra vulnerabilidades conocidas.
+                                                    - Tener cuidado con los enlaces y los archivos adjuntos en los correos electrónicos: Los correos electrónicos fraudulentos pueden contener malware o enlaces que conducen a sitios web maliciosos.
+                                                    - Hacer copias de seguridad de los datos: Las copias de seguridad pueden ayudar a restaurar los datos en caso de un ataque cibernético.
+                                                    - Contar con un plan de respuesta a incidentes: Un plan de respuesta a incidentes puede ayudar a las organizaciones a recuperarse rápidamente de un ataque cibernético.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/slider/Medidas de ciberseguridad.jpg" class="card-img" alt="">
+                                    </div>
+                                </a>
+                            <br>
                             
                             <div class="additional-image">
-                                <a href="#">
+                                <a href="#Principales" class="card-link">
                                     
                                     <section id="principales" class="swiper-slide"></section>
                                     <div class="image-caption">
@@ -198,7 +211,9 @@
 
     <!-- footer -->
     <footer id="footer">
+    
         <div class="container">
+            
             <div class="row mb-3">
                 <div class="col-3">
                     
@@ -258,7 +273,7 @@
                                         <div class="px-1">
                                             <a href="https://www.xataka.com/analisis/ultrahuman-ring-air-analisis-caracteristicas-precio-especificaciones" class="text-title display-2 text-white">
                                                 
-Ultrahuman Ring Air, análisis: así es vivir con un anillo inteligente al más puro estilo Oura (pero sin suscripción)
+                                                    Ultrahuman Ring Air, análisis: así es vivir con un anillo inteligente al más puro estilo Oura (pero sin suscripción)
 
 
                                             </a>
@@ -324,6 +339,7 @@ Ultrahuman Ring Air, análisis: así es vivir con un anillo inteligente al más 
                     © 2021 <a href="#" class="text-white">Dailytuition</a> - Personal Blog Theme. All rights reserved.
                 </p>
             </div>
+            
         </div>
     </footer>
     <!-- .footer -->
